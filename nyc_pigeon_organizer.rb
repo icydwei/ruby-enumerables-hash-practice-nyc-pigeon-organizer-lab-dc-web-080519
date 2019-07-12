@@ -20,7 +20,7 @@ pigeon_list = {}
     names.each do |name|
       #binding.pry
       if pigeon_list.include?(name)
-      
+        if pigeon_list[:genders]
       pigeon_list[name][:genders] << genders.to_s
       else
       pigeon_list[name] = {}
