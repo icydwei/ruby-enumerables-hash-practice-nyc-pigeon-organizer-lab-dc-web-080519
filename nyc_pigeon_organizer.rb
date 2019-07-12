@@ -34,7 +34,7 @@ pigeon_list = {}
   end
   data[:lives].reduce({}) do |memo, (location, names)|
     names.each do |name|
-      binding.pry
+      #binding.pry
       if pigeon_list.include?(name) && pigeon_list[:lives]
            pigeon_list[name][:lives] << genders.to_s
       elsif pigeon_list.include?(name) || pigeon_list[:lives]
