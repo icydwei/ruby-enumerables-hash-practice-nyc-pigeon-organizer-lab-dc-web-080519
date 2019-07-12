@@ -48,5 +48,5 @@ pigeon_list = {}
       end
     end  
   end
-return memo
+return pigeon_list
 end
