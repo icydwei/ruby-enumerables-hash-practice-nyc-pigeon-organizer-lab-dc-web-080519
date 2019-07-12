@@ -22,7 +22,7 @@ pigeon_list = {}
       if pigeon_list.include?(name) && pigeon_list[:gender]
            pigeon_list[name][:gender] << genders.to_s
       elsif pigeon_list.include?(name) || pigeon_list[:gender]
-          pigeon_list[:gender] = []
+          pigeon_list[name][:gender] = []
           pigeon_list[name][:gender] << genders.to_s
       else
       pigeon_list[name] = {}
