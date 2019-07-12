@@ -18,7 +18,7 @@ pigeon_list = {}
   end
   data[:gender].reduce({}) do |memo, (genders, names)|
     names.each do |name|
-      #binding.pry
+      binding.pry
       if pigeon_list.include?(name)
         binding.pry
         if pigeon_list[:gender]
