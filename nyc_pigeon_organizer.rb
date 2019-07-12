@@ -8,6 +8,7 @@ pigeon_list = {}
     if pigeon_list.include?(name)
       binding.pry
       pigeon_list[name][:color] = "purple"
-    end
+      end
+    end  
   end  
 end
