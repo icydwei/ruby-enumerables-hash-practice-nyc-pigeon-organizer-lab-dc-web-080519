@@ -10,7 +10,9 @@ pigeon_list = {}
       pigeon_list[name][:color] = colors.to_s
       else
       pigeon_list[name] = {}
-      pigeon_list[name][:color] = colors.to_s
+      pigeon_list[name][:color] = []
+      pigeon_list[name][:color] << colors.to_s
+      binding.pry
       end
     end  
   end  
