@@ -7,10 +7,10 @@ pigeon_list = {}
       #binding.pry
       if pigeon_list.include?(name)
       binding.pry
-      pigeon_list[name][:color] = "purple"
+      pigeon_list[name][:color] = colors_to_s
       else
       pigeon_list[name] = {}
-      pigeon_list[name][:color] = 
+      pigeon_list[name][:color] = colors.to_s
       end
     end  
   end  
