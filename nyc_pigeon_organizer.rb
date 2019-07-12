@@ -16,5 +16,18 @@ pigeon_list = {}
       end
     end  
   end
-  
+  data[:color].reduce({}) do |memo, (colors, names)|
+    names.each do |name|
+      #binding.pry
+      if pigeon_list.include?(name)
+      #binding.pry
+      pigeon_list[name][:color] = colors.to_s
+      else
+      pigeon_list[name] = {}
+      pigeon_list[name][:color] = []
+      pigeon_list[name][:color] << colors.to_s
+      #binding.pry
+      end
+    end  
+  end
 end
