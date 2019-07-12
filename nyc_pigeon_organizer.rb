@@ -20,12 +20,16 @@ pigeon_list = {}
     names.each do |name|
       #binding.pry
       if pigeon_list.include?(name)
-        if pigeon_list[:genders]
-      pigeon_list[name][:genders] << genders.to_s
+        binding.pry
+        if pigeon_list[:gender]
+           pigeon_list[name][:gender] << genders.to_s
+        else 
+          pigeon_list[:gender] = []
+          pigeon_list[name][:gender] << genders.to_s
       else
       pigeon_list[name] = {}
-      pigeon_list[name][:genders] = []
-      pigeon_list[name][:genders] << genders.to_s
+      pigeon_list[name][:gender] = []
+      pigeon_list[name][:gender] << genders.to_s
       #binding.pry
       end
     end  
