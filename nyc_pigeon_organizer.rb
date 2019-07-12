@@ -7,5 +7,7 @@ pigeon_list = {}
     colors.each do |names|
       if pigeon_list.include?(names)
         pigeon_list[names][:color] 
-    
+      end
+    end
+  end  
 end
