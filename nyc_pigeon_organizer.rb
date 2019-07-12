@@ -6,7 +6,7 @@ pigeon_list = {}
     names.each do |name|
       #binding.pry
       if pigeon_list.include?(name)
-      binding.pry
+      #binding.pry
       pigeon_list[name][:color] = colors_to_s
       else
       pigeon_list[name] = {}
